@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-size: large;
+    padding: 2% 2% 0 2%;
+    background: linear-gradient(#ee9ca7, #ffdde1);
+    overflow-y: hidden;
+}
+#title{
+    color: #34090f;
+    height: 9%;
+}
+#title span{
+    color: #fff;
+    font-weight: 700;
+}
+#navbar{
+    display: inline-flex;
+    height: 9%;
+    width: 100%;
+    justify-content: space-between;
+    color: orange;
+}
+#allimg{
+    display: grid;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    grid-template-columns: 9% 9% 9% 9% 9% 9% 9% 9% 9% 9%;
+    grid-template-rows: 18% 18% 18% 18% 18%;
+    padding: 2px;
+}
+.oneimg{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+.oneimg img{
+    width: 100%;
+    height: 100%;
+}
+#pokemon_list{
+    width: 95%;
+    padding-top: 0.5em;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows:48% 48%;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 1em;
+    text-transform: capitalize;
+}
+#pokemon_list .pokemon_details{ 
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    background-color: #450c14;
+}
+.img_container{
+    width: 100%;
+    height: 50%
+}
+.pokemon_img{
+    width: 100%;
+    height: 100%;
+}
+.pokemon_img img{
+    width: 100%;
+    height: 100%;
+}
+#lets_go{
+    text-align: center;
+}
+#lets_go button{
+    margin: 0 auto;
+    width: 20em;
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color:#ee9ca7;
+    color:#34090f;
+    background: #ee9ca7;
+    font-weight: 600;
+    border-color: #34090f;
+    font-size: small;
+}
+.pagination{
+    display: inline-flex;
+    justify-content: center;
+    padding: 1em 0;
+    height: 65px;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+.pagination a:hover:not(.active){
+    background-color: #ddd;
+}  
+#navbar{
+    display: inline-flex;
+    height: 7%;
+    width: 100%;
+    justify-content: space-between;
+    color: orange;
+}
+#navbar button{
+    width: 60px;
+    height: 40px;
+    color: #fff;
+    background-color: #34090f;
+    border-radius: 10px;
+}
+.stats{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+}
+#abilities,
+#moves{
+    color: #34090f;
+    font-weight: 600;
+    font-size: larger;
+}
+#abilities span{
+    background-color: #4592C4;
+    color: #4592C4;
+}
+#moves span{
+    background-color: #729F3F;
+    color: #729F3F;
+}
+.ability span{
+    background-color: #4592C4;
+    padding: 0.1em;
+    border-radius: 10px;
+    color: #fff;
+    font-size: medium;
+}
+.move span{
+    background-color: #729F3F;
+    padding: 0.1em;
+    border-radius: 10px;
+    color: #fff;
+    font-size: medium;
+}
+.pokemon{
+    font-weight: 800;
+    color: #fff;
+    font-size: larger;
+    padding-left: 0.7em;
+}
+.weight{
+    color: #fff;
+    font-size: small;
+}
+@media screen and (max-width: 375px) {
+    body{
+        overflow-y: scroll;
+    }
+    #abilities{
+        width: 5em;
+        padding-top: 0.3em;
+    }#moves{
+        width: 5em;
+        padding-top: 0.3em;
+    }   
+}
+@media screen and (max-width: 425px) {
+    body{
+        height: 185vh;
+        overflow-y: scroll;
+    }
+    #navbar{
+        height: 5.2em;
+        justify-content: center;
+    }
+    #home{
+        width: 50px;
+        height: 50px;
+        margin-top: 1em;
+    }
+    #title{
+        text-align: center;
+    }
+    #allimg{
+        width: 100%;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: 5em 5em 5em 5em 5em 5em 5em 5em 5em 5em;
+        padding: 2px;
+    }
+    #pokemon_list{
+        grid-template-columns: 43% 43%;
+        grid-template-rows: 20em 20em 20em;   
+        font-size: small;
+    }
+    #pokemon_list span{
+        font-size:x-small;
+    }
+    .stats span{
+        font-size: small;
+    }
+    #lets_go{
+        margin-top: 1em;
+    }
+    .pagination{
+        padding-top: 0;
+    }
+    .pagination a{
+        padding: 8px 8px;
+    }
+    #abilities{
+        padding-left: 0.75em;
+        padding-top: 1em;
+    }
+    #moves{
+        padding-top: 1em;
+    }
+    .move{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .weight{
+        font-size: x-small;
+    }
+}
+@media screen and (max-width: 767px) {
+    body{
+        height: 185vh;
+        overflow-y: scroll;
+    }
+    #navbar{
+        height: 5.2em;
+        justify-content: center;
+    }
+    #home{
+        width: 50px;
+        height: 50px;
+        margin-top: 1em;
+    }
+    #title{
+        text-align: center;
+    }
+    #allimg{
+        width: 100%;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: 5em 5em 5em 5em 5em 5em 5em 5em 5em 5em;
+        padding: 2px;
+    }
+    #pokemon_list{
+        grid-template-columns: 43% 43%;
+        grid-template-rows: 20em 20em 20em;   
+        font-size: small;
+    }
+    #pokemon_list span{
+        font-size:x-small;
+    }
+    .stats span{
+        font-size: small;
+    }
+    #lets_go{
+        margin-top: 1em;
+    }
+    .pagination{
+        padding-top: 0;
+    }
+    .pagination a{
+        padding: 8px 8px;
+    }
+    #abilities{
+        padding-left: 0.75em;
+        padding-top: 1em;
+    }
+    #moves{
+        padding-top: 1em;
+    }
+    .move{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .weight{
+        font-size: x-small;
+    }
+}
+@media screen and (min-width: 768px) {
+    #pokemon_list{
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 32% 32% 32%;
+    }
+    .stats{
+        font-size: x-small;
+    }
+    .pagination{
+        margin-top: 1em;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #pokemon_list{
+        grid-template-rows:50% 50%;
+    }
+}
+@media screen and (min-width: 2560px) {
+    #navbar{
+        font-size: xx-large;
+    }
+    #navbar button{
+        width: 125px;
+        height: 60px;
+    }    
+    .stats{
+        font-size: xx-large;
+    }
+    .pokemon{
+        font-size: xx-large;
+    }
+}
