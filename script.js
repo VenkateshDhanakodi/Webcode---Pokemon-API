@@ -72,7 +72,7 @@ lets_go.addEventListener("click",function(clicked){
 })
 function homecall() {
     `Activating Homepage Button`
-    location.href = "http://127.0.0.1:5501/Pokemon%20API/index.html";
+    location.reload();
 };
 
 window.addEventListener("click",function(clicked){
