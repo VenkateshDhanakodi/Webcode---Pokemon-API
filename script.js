@@ -61,7 +61,7 @@ lets_go.addEventListener("click",function(clicked){
         <img src="hash-pokemon.png.png" alt="#">`
     document.querySelector('#navbar').innerHTML = navbar;
 
-    if(clicked.target.innerHTML == "Click here to check Pokemon Stats"){
+    if(clicked.target.innerHTML == "Check Pokemon Stats"){
         `loading the first page pokemon content`
         for(let i = 1; i <= 35; i=i+5){
         pokemon_fetch(`https://pokeapi.co/api/v2/pokemon/${i}/`, i); 
